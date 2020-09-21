@@ -1,24 +1,74 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Masonry from 'react-masonry-css'
 
-function App() {
+const breakpointColumnsObj = {
+  default: 3,
+  980: 2,
+  700: 1
+};
+ 
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container pt-5">
+      <div className="row">
+        <div className="col">
+          <Masonry
+            breakpointCols={breakpointColumnsObj}
+            className="masonry-grid"
+            columnClassName="masonry-grid_column"
+          >
+            <div className="text-center">
+              <h2>Baob ab</h2>
+              <p>Adonsonia</p>
+              <img className="w-100 mb-2" src="https://dummyimage.com/400x600/dedede/000" alt="tree" />
+              <button className="btn btn-sm btn-green">Show Image</button>
+            </div>
+            <div className="text-center">
+              <h2>Baob ab</h2>
+              <p>Adonsonia</p>
+              <img className="w-100 mb-2" src="https://dummyimage.com/300x500/dedede/000" alt="tree" />
+              <button className="btn btn-sm btn-green">Show Image</button>
+            </div>
+            <div className="text-center">
+              <h2>Baob ab</h2>
+              <p>Adonsonia</p>
+              <img className="w-100 mb-2" src="https://dummyimage.com/200x300/dedede/000" alt="tree" />
+              <button className="btn btn-sm btn-green">Show Image</button>
+            </div>
+            <div className="text-center">
+              <h2>Baob ab</h2>
+              <p>Adonsonia</p>
+              <img className="w-100 mb-2" src="https://dummyimage.com/400x400/dedede/000" alt="tree" />
+              <button className="btn btn-sm btn-green">Show Image</button>
+            </div>
+            <div className="text-center">
+              <h2>Baob ab</h2>
+              <p>Adonsonia</p>
+              <img className="w-100 mb-2" src="https://dummyimage.com/400x600/dedede/000" alt="tree" />
+              <button className="btn btn-sm btn-green">Show Image</button>
+            </div>
+            <div className="text-center">
+              <h2>Baob ab</h2>
+              <p>Adonsonia</p>
+              <img className="w-100 mb-2" src="https://dummyimage.com/300x500/dedede/000" alt="tree" />
+              <button className="btn btn-sm btn-green">Show Image</button>
+            </div>
+            <div className="text-center">
+              <h2>Baob ab</h2>
+              <p>Adonsonia</p>
+              <img className="w-100 mb-2" src="https://dummyimage.com/200x300/dedede/000" alt="tree" />
+              <button className="btn btn-sm btn-green">Show Image</button>
+            </div>
+            <div className="text-center">
+              <h2>Baob ab</h2>
+              <p>Adonsonia</p>
+              <img className="w-100 mb-2" src="https://dummyimage.com/400x400/dedede/000" alt="tree" />
+              <button className="btn btn-sm btn-green">Show Image</button>
+            </div>
+          </Masonry>
+        </div>
+      </div>
     </div>
   );
 }
